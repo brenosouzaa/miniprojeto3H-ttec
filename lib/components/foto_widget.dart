@@ -45,7 +45,7 @@ class _FotoWidgetState extends State<FotoWidget> {
     return Stack(
       children: [
         Align(
-          alignment: AlignmentDirectional(0.0, 0.0),
+          alignment: AlignmentDirectional(0.00, 0.00),
           child: AuthUserStreamWidget(
             builder: (context) => ClipRRect(
               borderRadius: BorderRadius.circular(110.0),

@@ -8,8 +8,8 @@ import '/backend/schema/util/schema_util.dart';
 import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
-class CurtidasRecord extends FirestoreRecord {
-  CurtidasRecord._(
+class ComentarioRecord extends FirestoreRecord {
+  ComentarioRecord._(
     DocumentReference reference,
     Map<String, dynamic> data,
   ) : super(reference, data) {
@@ -46,10 +46,20 @@ class CurtidasRecord extends FirestoreRecord {
   List<DocumentReference> get likes => _likes ?? const [];
   bool hasLikes() => _likes != null;
 
+  // "num_comments" field.
+  int? _numComments;
+  int get numComments => _numComments ?? 0;
+  bool hasNumComments() => _numComments != null;
+
   // "num_votes" field.
   int? _numVotes;
   int get numVotes => _numVotes ?? 0;
   bool hasNumVotes() => _numVotes != null;
+
+  // "comentario" field.
+  List<DocumentReference>? _comentario;
+  List<DocumentReference> get comentario => _comentario ?? const [];
+  bool hasComentario() => _comentario != null;
 
   void _initializeFields() {
     _postPhoto = snapshotData['post_photo'] as String?;
@@ -58,49 +68,52 @@ class CurtidasRecord extends FirestoreRecord {
     _postUser = snapshotData['post_user'] as DocumentReference?;
     _timePosted = snapshotData['time_posted'] as DateTime?;
     _likes = getDataList(snapshotData['likes']);
+    _numComments = castToType<int>(snapshotData['num_comments']);
     _numVotes = castToType<int>(snapshotData['num_votes']);
+    _comentario = getDataList(snapshotData['comentario']);
   }
 
   static CollectionReference get collection =>
-      FirebaseFirestore.instance.collection('curtidas');
+      FirebaseFirestore.instance.collection('comentario');
 
-  static Stream<CurtidasRecord> getDocument(DocumentReference ref) =>
-      ref.snapshots().map((s) => CurtidasRecord.fromSnapshot(s));
+  static Stream<ComentarioRecord> getDocument(DocumentReference ref) =>
+      ref.snapshots().map((s) => ComentarioRecord.fromSnapshot(s));
 
-  static Future<CurtidasRecord> getDocumentOnce(DocumentReference ref) =>
-      ref.get().then((s) => CurtidasRecord.fromSnapshot(s));
+  static Future<ComentarioRecord> getDocumentOnce(DocumentReference ref) =>
+      ref.get().then((s) => ComentarioRecord.fromSnapshot(s));
 
-  static CurtidasRecord fromSnapshot(DocumentSnapshot snapshot) =>
-      CurtidasRecord._(
+  static ComentarioRecord fromSnapshot(DocumentSnapshot snapshot) =>
+      ComentarioRecord._(
         snapshot.reference,
         mapFromFirestore(snapshot.data() as Map<String, dynamic>),
       );
 
-  static CurtidasRecord getDocumentFromData(
+  static ComentarioRecord getDocumentFromData(
     Map<String, dynamic> data,
     DocumentReference reference,
   ) =>
-      CurtidasRecord._(reference, mapFromFirestore(data));
+      ComentarioRecord._(reference, mapFromFirestore(data));
 
   @override
   String toString() =>
-      'CurtidasRecord(reference: ${reference.path}, data: $snapshotData)';
+      'ComentarioRecord(reference: ${reference.path}, data: $snapshotData)';
 
   @override
   int get hashCode => reference.path.hashCode;
 
   @override
   bool operator ==(other) =>
-      other is CurtidasRecord &&
+      other is ComentarioRecord &&
       reference.path.hashCode == other.reference.path.hashCode;
 }
 
-Map<String, dynamic> createCurtidasRecordData({
+Map<String, dynamic> createComentarioRecordData({
   String? postPhoto,
   String? postTitle,
   String? postDescription,
   DocumentReference? postUser,
   DateTime? timePosted,
+  int? numComments,
   int? numVotes,
 }) {
   final firestoreData = mapToFirestore(
@@ -110,6 +123,7 @@ Map<String, dynamic> createCurtidasRecordData({
       'post_description': postDescription,
       'post_user': postUser,
       'time_posted': timePosted,
+      'num_comments': numComments,
       'num_votes': numVotes,
     }.withoutNulls,
   );
@@ -117,11 +131,11 @@ Map<String, dynamic> createCurtidasRecordData({
   return firestoreData;
 }
 
-class CurtidasRecordDocumentEquality implements Equality<CurtidasRecord> {
-  const CurtidasRecordDocumentEquality();
+class ComentarioRecordDocumentEquality implements Equality<ComentarioRecord> {
+  const ComentarioRecordDocumentEquality();
 
   @override
-  bool equals(CurtidasRecord? e1, CurtidasRecord? e2) {
+  bool equals(ComentarioRecord? e1, ComentarioRecord? e2) {
     const listEquality = ListEquality();
     return e1?.postPhoto == e2?.postPhoto &&
         e1?.postTitle == e2?.postTitle &&
@@ -129,20 +143,24 @@ class CurtidasRecordDocumentEquality implements Equality<CurtidasRecord> {
         e1?.postUser == e2?.postUser &&
         e1?.timePosted == e2?.timePosted &&
         listEquality.equals(e1?.likes, e2?.likes) &&
-        e1?.numVotes == e2?.numVotes;
+        e1?.numComments == e2?.numComments &&
+        e1?.numVotes == e2?.numVotes &&
+        listEquality.equals(e1?.comentario, e2?.comentario);
   }
 
   @override
-  int hash(CurtidasRecord? e) => const ListEquality().hash([
+  int hash(ComentarioRecord? e) => const ListEquality().hash([
         e?.postPhoto,
         e?.postTitle,
         e?.postDescription,
         e?.postUser,
         e?.timePosted,
         e?.likes,
-        e?.numVotes
+        e?.numComments,
+        e?.numVotes,
+        e?.comentario
       ]);
 
   @override
-  bool isValidKey(Object? o) => o is CurtidasRecord;
+  bool isValidKey(Object? o) => o is ComentarioRecord;
 }

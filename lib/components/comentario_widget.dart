@@ -136,7 +136,7 @@ class _ComentarioWidgetState extends State<ComentarioWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.2, 0.25),
+                                alignment: AlignmentDirectional(0.20, 0.25),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       65.0, 0.0, 0.0, 0.0),
@@ -249,7 +249,7 @@ class _ComentarioWidgetState extends State<ComentarioWidget> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(-1.0, 0.0),
+                    alignment: AlignmentDirectional(-1.00, 0.00),
                     child: Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),

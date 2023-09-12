@@ -363,7 +363,7 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
                           Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.06),
+                                alignment: AlignmentDirectional(-1.00, 0.06),
                                 child: Container(
                                   width: 100.0,
                                   height: 100.0,
@@ -392,7 +392,7 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.2, 0.45),
+                                          AlignmentDirectional(0.20, 0.45),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),

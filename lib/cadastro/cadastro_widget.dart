@@ -101,7 +101,7 @@ class _CadastroWidgetState extends State<CadastroWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-0.65, -0.6),
+                          alignment: AlignmentDirectional(-0.65, -0.60),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 30.0, 0.0, 10.0),
@@ -126,7 +126,7 @@ class _CadastroWidgetState extends State<CadastroWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.15, 0.0),
+                                  alignment: AlignmentDirectional(0.15, 0.00),
                                   child: AutoSizeText(
                                     FFLocalizations.of(context).getText(
                                       'l2mzg09p' /* TECH ZOOM */,
@@ -468,9 +468,7 @@ class _CadastroWidgetState extends State<CadastroWidget> {
                                   ),
                                 ),
                               ),
-                              style: TextStyle(
-                                fontWeight: FontWeight.w800,
-                              ),
+                              style: FlutterFlowTheme.of(context).bodySmall,
                               keyboardType: TextInputType.visiblePassword,
                               validator: _model.senha2ControllerValidator
                                   .asValidator(context),
@@ -481,7 +479,7 @@ class _CadastroWidgetState extends State<CadastroWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.25, 0.0),
+                                alignment: AlignmentDirectional(0.25, 0.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 24.0, 24.0, 24.0),

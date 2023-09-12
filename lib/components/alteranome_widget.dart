@@ -135,7 +135,7 @@ class _AlteranomeWidgetState extends State<AlteranomeWidget> {
                           FFAppState().Aleterarnome = true;
                         });
 
-                        context.pushNamed('conta01');
+                        context.pushNamed('nome');
                       },
                       text: FFLocalizations.of(context).getText(
                         'jlowc4so' /* Cancelar */,
@@ -171,8 +171,6 @@ class _AlteranomeWidgetState extends State<AlteranomeWidget> {
                             .update(createUsersRecordData(
                           userName: _model.textController.text,
                         ));
-
-                        context.pushNamed('conta01');
                       },
                       text: FFLocalizations.of(context).getText(
                         't25g7k2s' /* Confirmar */,

@@ -112,7 +112,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(-0.65, -0.6),
+                  alignment: AlignmentDirectional(-0.65, -0.60),
                   child: Padding(
                     padding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 10.0),
@@ -137,7 +137,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.15, 0.0),
+                          alignment: AlignmentDirectional(0.15, 0.00),
                           child: AutoSizeText(
                             FFLocalizations.of(context).getText(
                               '74pic22d' /* TECH ZOOM */,
@@ -498,7 +498,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       color: Color(0xFF551A8B),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: AlignmentDirectional(0.00, 0.00),
                                   child: FaIcon(
                                     FontAwesomeIcons.google,
                                     color: Colors.white,
@@ -539,7 +539,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       color: Color(0xFF551A8B),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: AlignmentDirectional(0.00, 0.00),
                                   child: FaIcon(
                                     FontAwesomeIcons.apple,
                                     color: Colors.white,
@@ -580,7 +580,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       color: Color(0xFF551A8B),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: AlignmentDirectional(0.00, 0.00),
                                   child: FaIcon(
                                     FontAwesomeIcons.facebookF,
                                     color: Colors.white,
@@ -605,7 +605,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     color: Color(0xFF551A8B),
                                   ),
                                 ),
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.00, 0.00),
                                 child: Icon(
                                   Icons.phone_sharp,
                                   color: Colors.white,

@@ -455,7 +455,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                                     Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              -0.5, 0.0),
+                                                              -0.50, 0.00),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -466,7 +466,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.2, 0.45),
+                                                                    0.20, 0.45),
                                                             child: Text(
                                                               containerProdutosRecord
                                                                   .nome,
@@ -487,7 +487,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.4, 0.0),
+                                                                    0.40, 0.00),
                                                             child: ToggleIcon(
                                                               onPressed:
                                                                   () async {
@@ -527,7 +527,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                                     Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              -0.65, 0.0),
+                                                              -0.65, 0.00),
                                                       child: Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
@@ -546,7 +546,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                                             Align(
                                                               alignment:
                                                                   AlignmentDirectional(
-                                                                      0.2,
+                                                                      0.20,
                                                                       0.45),
                                                               child: Text(
                                                                 containerProdutosRecord

@@ -134,8 +134,6 @@ class _AlterarapelidoWidgetState extends State<AlterarapelidoWidget> {
                         setState(() {
                           FFAppState().Aleterarnome = true;
                         });
-
-                        context.pushNamed('conta01');
                       },
                       text: FFLocalizations.of(context).getText(
                         'i39e4tp2' /* Cancelar */,
@@ -171,8 +169,6 @@ class _AlterarapelidoWidgetState extends State<AlterarapelidoWidget> {
                             .update(createUsersRecordData(
                           apelido: '',
                         ));
-
-                        context.pushNamed('conta01');
                       },
                       text: FFLocalizations.of(context).getText(
                         'nvo6y0w8' /* Confirmar */,

@@ -97,15 +97,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => CadastroWidget(),
             ),
             FFRoute(
-              name: 'login',
-              path: 'login',
-              builder: (context, params) => LoginWidget(),
-            ),
-            FFRoute(
               name: 'HomePage',
               path: 'homePage',
               requireAuth: true,
               builder: (context, params) => HomePageWidget(),
+            ),
+            FFRoute(
+              name: 'login',
+              path: 'login',
+              builder: (context, params) => LoginWidget(),
             ),
             FFRoute(
               name: 'configuracao',
@@ -138,32 +138,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => BuscaWidget(),
             ),
             FFRoute(
-              name: 'ajuda',
-              path: 'ajuda',
-              requireAuth: true,
-              builder: (context, params) => AjudaWidget(),
-            ),
-            FFRoute(
-              name: 'conta01',
-              path: 'conta01',
-              requireAuth: true,
-              builder: (context, params) => Conta01Widget(
-                nome: params.getParam('nome', ParamType.String),
-                email: params.getParam('email', ParamType.String),
-                senha: params.getParam('senha', ParamType.String),
-              ),
-            ),
-            FFRoute(
               name: 'fichattecnica',
               path: 'fichattecnica',
               requireAuth: true,
               builder: (context, params) => FichattecnicaWidget(),
-            ),
-            FFRoute(
-              name: 'perfil',
-              path: 'perfil',
-              requireAuth: true,
-              builder: (context, params) => PerfilWidget(),
             ),
             FFRoute(
               name: 'resultado',
@@ -181,16 +159,58 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => FeedbackWidget(),
             ),
             FFRoute(
-              name: 'djdn',
-              path: 'djdn',
-              requireAuth: true,
-              builder: (context, params) => DjdnWidget(),
-            ),
-            FFRoute(
               name: 'nome',
               path: 'nome',
               requireAuth: true,
               builder: (context, params) => NomeWidget(),
+            ),
+            FFRoute(
+              name: 'suporte',
+              path: 'suporte',
+              requireAuth: true,
+              builder: (context, params) => SuporteWidget(),
+            ),
+            FFRoute(
+              name: 'perfil2',
+              path: 'perfil2',
+              requireAuth: true,
+              builder: (context, params) => Perfil2Widget(),
+            ),
+            FFRoute(
+              name: 'feedback1',
+              path: 'feedback1',
+              requireAuth: true,
+              builder: (context, params) => Feedback1Widget(),
+            ),
+            FFRoute(
+              name: 'avaliacao',
+              path: 'avaliacao',
+              requireAuth: true,
+              builder: (context, params) => AvaliacaoWidget(),
+            ),
+            FFRoute(
+              name: 'Conecteseans',
+              path: 'conecteseans',
+              requireAuth: true,
+              builder: (context, params) => ConecteseansWidget(),
+            ),
+            FFRoute(
+              name: 'notificacao',
+              path: 'notificacao',
+              requireAuth: true,
+              builder: (context, params) => NotificacaoWidget(),
+            ),
+            FFRoute(
+              name: 'avaliacaoempresa',
+              path: 'avaliacaoempresa',
+              requireAuth: true,
+              builder: (context, params) => AvaliacaoempresaWidget(),
+            ),
+            FFRoute(
+              name: 'comentar',
+              path: 'comentar',
+              requireAuth: true,
+              builder: (context, params) => ComentarWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

@@ -51,6 +51,9 @@ class HomePageModel extends FlutterFlowModel {
   // State field(s) for TextField widget.
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;
+  // State field(s) for TextField widget.
+  TextEditingController? textController3;
+  String? Function(BuildContext, String?)? textController3Validator;
   // State field(s) for PageView widget.
   PageController? pageViewController;
 
@@ -74,6 +77,7 @@ class HomePageModel extends FlutterFlowModel {
     unfocusNode.dispose();
     textController1?.dispose();
     textController2?.dispose();
+    textController3?.dispose();
     listViewStreamSubscriptions2.forEach((s) => s?.cancel());
     listViewPagingController2?.dispose();
   }

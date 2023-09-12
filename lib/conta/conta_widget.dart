@@ -1,9 +1,7 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -128,7 +126,7 @@ class _ContaWidgetState extends State<ContaWidget> {
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.pushNamed('perfil');
+                                  context.pushNamed('perfil2');
                                 },
                                 child: Icon(
                                   Icons.arrow_forward_ios,
@@ -154,62 +152,45 @@ class _ContaWidgetState extends State<ContaWidget> {
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  20.0, 0.0, 0.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'bhqylfju' /* Nome: */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 16.0,
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                              ),
-                            ),
-                            AuthUserStreamWidget(
-                              builder: (context) => InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  await currentUserReference!
-                                      .update(createUsersRecordData());
-                                },
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('nome');
+                          },
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    20.0, 0.0, 0.0, 0.0),
                                 child: Text(
-                                  valueOrDefault(
-                                      currentUserDocument?.userName, ''),
-                                  style: FlutterFlowTheme.of(context).bodySmall,
+                                  FFLocalizations.of(context).getText(
+                                    'bhqylfju' /* Nome: */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 16.0,
+                                        fontWeight: FontWeight.w800,
+                                      ),
                                 ),
                               ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 20.0, 0.0),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  context.pushNamed('nome');
-                                },
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 20.0, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context).black600,
                                   size: 24.0,
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -244,13 +225,6 @@ class _ContaWidgetState extends State<ContaWidget> {
                                       fontSize: 16.0,
                                       fontWeight: FontWeight.w800,
                                     ),
-                              ),
-                            ),
-                            AuthUserStreamWidget(
-                              builder: (context) => Text(
-                                valueOrDefault(
-                                    currentUserDocument?.apelido, ''),
-                                style: FlutterFlowTheme.of(context).bodySmall,
                               ),
                             ),
                             Padding(
@@ -298,10 +272,6 @@ class _ContaWidgetState extends State<ContaWidget> {
                                       fontWeight: FontWeight.w800,
                                     ),
                               ),
-                            ),
-                            Text(
-                              currentUserEmail,
-                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(

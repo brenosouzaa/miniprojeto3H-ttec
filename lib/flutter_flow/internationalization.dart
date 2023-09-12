@@ -144,45 +144,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // login
-  {
-    'gh5ylvzd': {
-      'en': 'Login',
-      'es': '',
-    },
-    '74pic22d': {
-      'en': 'TECH ZOOM',
-      'es': '',
-    },
-    'kkgnqdcg': {
-      'en': 'Email:',
-      'es': '',
-    },
-    'cwm8kwlu': {
-      'en': 'Senha:',
-      'es': '',
-    },
-    '7k6ilrrp': {
-      'en': 'Esqueceu a senha?',
-      'es': '',
-    },
-    'k20059yd': {
-      'en': 'Entrar',
-      'es': '',
-    },
-    'o04yvtdl': {
-      'en': 'Cadastrar',
-      'es': '',
-    },
-    '7mq92bgt': {
-      'en': 'usar rede social',
-      'es': '',
-    },
-    'k8n9lc09': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // HomePage
   {
     '5vxf8d4q': {
@@ -333,6 +294,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Rede social',
       'es': '',
     },
+    'i5rcvhpo': {
+      'en': 'Label here...',
+      'es': '',
+    },
+    'qm92me8v': {
+      'en': 'Categoria',
+      'es': '',
+    },
     'z62llhpv': {
       'en': 'Ajuda',
       'es': '',
@@ -350,6 +319,45 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'vn2s1aye': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // login
+  {
+    'gh5ylvzd': {
+      'en': 'Login',
+      'es': '',
+    },
+    '74pic22d': {
+      'en': 'TECH ZOOM',
+      'es': '',
+    },
+    'kkgnqdcg': {
+      'en': 'Email:',
+      'es': '',
+    },
+    'cwm8kwlu': {
+      'en': 'Senha:',
+      'es': '',
+    },
+    '7k6ilrrp': {
+      'en': 'Esqueceu a senha?',
+      'es': '',
+    },
+    'k20059yd': {
+      'en': 'Entrar',
+      'es': '',
+    },
+    'o04yvtdl': {
+      'en': 'Cadastrar',
+      'es': '',
+    },
+    '7mq92bgt': {
+      'en': 'usar rede social',
+      'es': '',
+    },
+    'k8n9lc09': {
       'en': 'Home',
       'es': '',
     },
@@ -376,24 +384,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Favorito',
       'es': '',
     },
-    'qz3x87ng': {
-      'en': 'Configurações',
-      'es': '',
-    },
-    'ees3r1wq': {
-      'en': 'Privacidade',
-      'es': '',
-    },
     'ygceut6w': {
       'en': 'Notificação',
-      'es': '',
-    },
-    'yy1rnd40': {
-      'en': 'Favorito',
-      'es': '',
-    },
-    'rdpld0pe': {
-      'en': 'Favorito',
       'es': '',
     },
     'ntr1vzr0': {
@@ -406,10 +398,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '11hy7rmp': {
       'en': 'Avaliação e Feedback',
-      'es': '',
-    },
-    'h3fnczw8': {
-      'en': 'Conecte-se a nós',
       'es': '',
     },
     '1eqpocpb': {
@@ -557,96 +545,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // ajuda
-  {
-    'wxpqt5xq': {
-      'en': 'Serviços',
-      'es': '',
-    },
-    '2r9bc2mk': {
-      'en': 'Notificação',
-      'es': '',
-    },
-    'oj5viiri': {
-      'en': 'Modo escuro',
-      'es': '',
-    },
-    'hmxfpili': {
-      'en': 'Historico',
-      'es': '',
-    },
-    'nvps3q6w': {
-      'en': 'Suporte',
-      'es': '',
-    },
-    'sdyv34po': {
-      'en': 'Privacidade ',
-      'es': '',
-    },
-    'nm4hxtbo': {
-      'en': 'Favoritos',
-      'es': '',
-    },
-    '5u7f5ef5': {
-      'en': 'Sobre o app',
-      'es': '',
-    },
-    '3h42s984': {
-      'en': 'Instrução',
-      'es': '',
-    },
-    'fps6jy6t': {
-      'en': 'Feedback',
-      'es': '',
-    },
-    'vmz7xg0y': {
-      'en': 'Denunciar',
-      'es': '',
-    },
-    'xiz5wqyw': {
-      'en': 'Meu Perfil ',
-      'es': '',
-    },
-    '9mra9wgw': {
-      'en': 'Mais',
-      'es': '',
-    },
-    'lyi3586m': {
-      'en': 'Hom',
-      'es': '',
-    },
-  },
-  // conta01
-  {
-    'vb78bao2': {
-      'en': 'Alterar Foto do perfil',
-      'es': '',
-    },
-    'skjkfqda': {
-      'en': 'Nome:',
-      'es': '',
-    },
-    'kxp8nqhq': {
-      'en': 'Apelido:',
-      'es': '',
-    },
-    'nwlwpl9m': {
-      'en': 'Email:',
-      'es': '',
-    },
-    '81lbxks8': {
-      'en': 'Sair',
-      'es': '',
-    },
-    'xivprxt4': {
-      'en': 'Excluir conta',
-      'es': '',
-    },
-    '1cd3ir0t': {
-      'en': 'Conta',
-      'es': '',
-    },
-  },
   // fichattecnica
   {
     'x1md5wno': {
@@ -654,29 +552,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     '4rg3zudd': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
-  // perfil
-  {
-    'ev77dc1t': {
-      'en': 'Nome completo',
-      'es': '',
-    },
-    'p47n0j4e': {
-      'en': 'Apelido',
-      'es': '',
-    },
-    'tx56qfr3': {
-      'en': 'Email',
-      'es': '',
-    },
-    'a08a8jpf': {
-      'en': 'Conta',
-      'es': '',
-    },
-    'ygrmkve9': {
       'en': 'Home',
       'es': '',
     },
@@ -704,7 +579,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     '23da72gy': {
-      'en': '4.9%',
+      'en': '4.3%',
       'es': '',
     },
     'do53vlwm': {
@@ -747,55 +622,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'comentar',
       'es': '',
     },
-    'oekdg6kf': {
-      'en': '@CR7',
+    'ogzm5ej7': {
+      'en': '10h',
       'es': '',
     },
-    'cfqe2api': {
-      'en':
-          'Celular maravilhoso, leve (muito leve \nmesmo), rápido, muito bom para usar\n horas e horas, a bateria é incrível! ',
+    '5fml752f': {
+      'en': '190 Curtida',
       'es': '',
     },
-    'cubhw6l4': {
-      'en': '20',
-      'es': '',
-    },
-    'xpefm1ch': {
-      'en': 'Responder',
-      'es': '',
-    },
-    'uv9lyx8f': {
-      'en': '@messi',
-      'es': '',
-    },
-    'zrkm4kfj': {
-      'en':
-          'Só deixou a desejar a bateria mesmo,\n mais um aparelho espetacular, estou\n super satisfeita!! ',
-      'es': '',
-    },
-    'gbn39k9x': {
-      'en': '16',
-      'es': '',
-    },
-    'pqeg1k6u': {
-      'en': 'Responder',
-      'es': '',
-    },
-    'z6fugasl': {
-      'en': '@icadi_rei_delas',
-      'es': '',
-    },
-    '5upnpkir': {
-      'en':
-          'Só deixou a desejar a bateria mesmo,\n mais um aparelho espetacular, estou\n super satisfeita!! ',
-      'es': '',
-    },
-    'larfg41x': {
-      'en': '14',
-      'es': '',
-    },
-    'l4uxqpyv': {
-      'en': 'Responder',
+    'g1laf4la': {
+      'en': '- 299 Comentarios',
       'es': '',
     },
     'nen9mk0o': {
@@ -810,25 +646,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'efqmwk3a': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
-  // djdn
-  {
-    '8kknkynj': {
-      'en': ' Edge 30 ',
-      'es': '',
-    },
-    '10qu41fq': {
-      'en': 'Motorola',
-      'es': '',
-    },
-    '3rfn4jtp': {
-      'en': 'Page Title',
-      'es': '',
-    },
-    'o2vybjhu': {
       'en': 'Home',
       'es': '',
     },
@@ -852,6 +669,259 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'nub6qaxx': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // suporte
+  {
+    'ewade4g7': {
+      'en': 'Central de Ajuda',
+      'es': '',
+    },
+    'klev9iag': {
+      'en': 'Como podemos ajudar?',
+      'es': '',
+    },
+    '7s3q0ko2': {
+      'en': 'Digite sua pergunta',
+      'es': '',
+    },
+    'f7gve9cl': {
+      'en': 'Digite sua pergunta...',
+      'es': '',
+    },
+    'y390cwwd': {
+      'en': 'Perguntas Frequentes',
+      'es': '',
+    },
+    'kjmdlgdl': {
+      'en': '24',
+      'es': '',
+    },
+    't99s31ct': {
+      'en': 'Como faço para criar uma conta?',
+      'es': '',
+    },
+    'i6iumetn': {
+      'en': 'Como posso entrar em contato com o suporte?',
+      'es': '',
+    },
+    'xe8mrlv8': {
+      'en': 'Como posso alterar minha senha?',
+      'es': '',
+    },
+    'fneke5mn': {
+      'en': 'Como faço para cancelar minha conta?',
+      'es': '',
+    },
+    'ud6fe7lk': {
+      'en': 'Como posso recuperar minha conta?',
+      'es': '',
+    },
+    't4ovflji': {
+      'en': 'Como faço para atualizar minhas informações pessoais?',
+      'es': '',
+    },
+    'we9vfoju': {
+      'en': 'Como posso visualizar minhas transações?',
+      'es': '',
+    },
+    '59tvln5r': {
+      'en': 'Como posso solicit',
+      'es': '',
+    },
+    '7qi3avlj': {
+      'en': 'Como posso alterar minhas preferências de notificação?',
+      'es': '',
+    },
+    'xuakxalg': {
+      'en': 'Como posso denunciar um problema?',
+      'es': '',
+    },
+    'v8moygzr': {
+      'en': 'Entrar em Contato',
+      'es': '',
+    },
+    'adaxc2bx': {
+      'en': 'suporte',
+      'es': '',
+    },
+  },
+  // perfil2
+  {
+    'ivdwznvd': {
+      'en': 'Perfil',
+      'es': '',
+    },
+    'tvbvb3ff': {
+      'en': 'Nome:',
+      'es': '',
+    },
+    's7qq23pa': {
+      'en': 'Apelido:',
+      'es': '',
+    },
+    '7oky8qt2': {
+      'en': 'Email',
+      'es': '',
+    },
+    '44s4macx': {
+      'en': 'Mais',
+      'es': '',
+    },
+    '26j24elk': {
+      'en': 'Sair da Conta',
+      'es': '',
+    },
+  },
+  // feedback1
+  {
+    '1u79gir3': {
+      'en': 'Nome',
+      'es': '',
+    },
+    'htyut5o1': {
+      'en': 'Digite seu nome',
+      'es': '',
+    },
+    'p38e6rhn': {
+      'en': 'Email',
+      'es': '',
+    },
+    '09cr63y7': {
+      'en': 'Digite seu email',
+      'es': '',
+    },
+    'raocdvec': {
+      'en': 'mensagem',
+      'es': '',
+    },
+    'fwrpp2p4': {
+      'en': 'Digite sua mensagem',
+      'es': '',
+    },
+    'jhhidl62': {
+      'en': 'Enviar',
+      'es': '',
+    },
+    'i1anabuj': {
+      'en': 'Deixe seu Feedback',
+      'es': '',
+    },
+  },
+  // avaliacao
+  {
+    'nkj8qqei': {
+      'en': 'Suporte',
+      'es': '',
+    },
+    '7zzww3y5': {
+      'en': 'Fale Conosco',
+      'es': '',
+    },
+    'j8pqhhrf': {
+      'en': 'Feedback',
+      'es': '',
+    },
+    'xpa64qhb': {
+      'en': 'Avaliar',
+      'es': '',
+    },
+    'l345e1yy': {
+      'en': 'Avaliação',
+      'es': '',
+    },
+  },
+  // Conecteseans
+  {
+    'ezlo0eat': {
+      'en': 'Conecte-se a nós',
+      'es': '',
+    },
+    'wqdpfsg6': {
+      'en':
+          'Estamos aqui para ajudar. Entre em contato conosco se tiver alguma dúvida ou precisar de suporte.',
+      'es': '',
+    },
+    'pjifxxjb': {
+      'en': 'Telefone: (XX) XXXX-XXXX',
+      'es': '',
+    },
+    'fskcnl55': {
+      'en': 'Email: suporte@exemplo.com',
+      'es': '',
+    },
+    'v9qslonz': {
+      'en': '',
+      'es': '',
+    },
+  },
+  // notificacao
+  {
+    'y4epj6e6': {
+      'en': 'Configurações de Notificação',
+      'es': '',
+    },
+    'ncuxej0i': {
+      'en': 'Habilitar Notificações',
+      'es': '',
+    },
+    'v9ynrqzy': {
+      'en': 'Receber Alertas de Comentários',
+      'es': '',
+    },
+    '3mhgkwuw': {
+      'en': 'Receber Alertas de Curtidas',
+      'es': '',
+    },
+    'r1z128y3': {
+      'en': 'Receber Alertas do Aplicativo',
+      'es': '',
+    },
+    '9c1iwy6v': {
+      'en': 'Notificação',
+      'es': '',
+    },
+  },
+  // avaliacaoempresa
+  {
+    '3e1khfx8': {
+      'en': 'Por favor, avalie a empresa abaixo.',
+      'es': '',
+    },
+    'umvk590f': {
+      'en': 'Enviar Avaliação',
+      'es': '',
+    },
+    'aqm3c17p': {
+      'en': 'Avalie a Empresa',
+      'es': '',
+    },
+  },
+  // comentar
+  {
+    'g5bls6f7': {
+      'en': 'Comentario',
+      'es': '',
+    },
+    'p7nv14m3': {
+      'en': 'Seu comentario',
+      'es': '',
+    },
+    'fz6kk8b3': {
+      'en': 'Avaliar:',
+      'es': '',
+    },
+    'v827n37o': {
+      'en': 'Postar',
+      'es': '',
+    },
+    'leshcyxe': {
+      'en': 'comentar',
+      'es': '',
+    },
+    '094h89k2': {
       'en': 'Home',
       'es': '',
     },
