@@ -57,7 +57,7 @@ class _BuscaWidgetState extends State<BuscaWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_outlined,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Color(0xFFFBF3F3),
               size: 30.0,
             ),
             onPressed: () async {
@@ -66,12 +66,12 @@ class _BuscaWidgetState extends State<BuscaWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'xt3y0u8n' /* busca */,
+              'xt3y0u8n' /* Busca */,
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Poppins',
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
-                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -188,7 +188,7 @@ class _BuscaWidgetState extends State<BuscaWidget> {
                             20.0, 10.0, 10.0, 10.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'dwzxmxl9' /* 20 resultados encontrado */,
+                            'dwzxmxl9' /* 20 resultados encontrados */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(

@@ -76,7 +76,7 @@ class _LoginWidgetState extends State<LoginWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_outlined,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Color(0xFFFBF3F3),
               size: 30.0,
             ),
             onPressed: () async {
@@ -95,8 +95,8 @@ class _LoginWidgetState extends State<LoginWidget> {
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Poppins',
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
-                  fontSize: 30.0,
+                  color: Color(0xFFFBF3F3),
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -185,11 +185,22 @@ class _LoginWidgetState extends State<LoginWidget> {
                             labelText: FFLocalizations.of(context).getText(
                               'kkgnqdcg' /* Email: */,
                             ),
-                            labelStyle: FlutterFlowTheme.of(context).bodySmall,
-                            hintStyle: FlutterFlowTheme.of(context).bodySmall,
+                            labelStyle:
+                                FlutterFlowTheme.of(context).bodySmall.override(
+                                      fontFamily: 'Poppins',
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
+                                    ),
+                            hintStyle:
+                                FlutterFlowTheme.of(context).bodySmall.override(
+                                      fontFamily: 'Poppins',
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
+                                    ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: Colors.white,
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
@@ -216,16 +227,19 @@ class _LoginWidgetState extends State<LoginWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             filled: true,
-                            fillColor: Colors.white,
+                            fillColor: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                             contentPadding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF0F1113),
-                                    fontWeight: FontWeight.w800,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                fontWeight: FontWeight.w800,
+                              ),
                           keyboardType: TextInputType.emailAddress,
                           validator: _model.emailAddressControllerValidator
                               .asValidator(context),
@@ -255,11 +269,24 @@ class _LoginWidgetState extends State<LoginWidget> {
                             labelText: FFLocalizations.of(context).getText(
                               'cwm8kwlu' /* Senha: */,
                             ),
-                            labelStyle: FlutterFlowTheme.of(context).bodySmall,
-                            hintStyle: FlutterFlowTheme.of(context).bodySmall,
+                            labelStyle: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                ),
+                            hintStyle: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: Colors.white,
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
@@ -286,7 +313,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             filled: true,
-                            fillColor: Colors.white,
+                            fillColor: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                             contentPadding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                             suffixIcon: InkWell(
@@ -305,12 +333,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                             ),
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF0F1113),
-                                    fontWeight: FontWeight.w900,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontWeight: FontWeight.w900,
+                              ),
                           keyboardType: TextInputType.visiblePassword,
                           validator: _model.passwordControllerValidator
                               .asValidator(context),
@@ -352,7 +381,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     .bodySmall
                                     .override(
                                       fontFamily: 'Poppins',
-                                      color: Color(0xFF551A8B),
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
                                       fontSize: 13.0,
                                       fontWeight: FontWeight.w800,
                                     ),
@@ -447,13 +477,14 @@ class _LoginWidgetState extends State<LoginWidget> {
                           FFLocalizations.of(context).getText(
                             '7mq92bgt' /* usar rede social */,
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Lexend Deca',
-                                    color: Color(0xFF551A8B),
-                                    fontSize: 14.0,
-                                    fontWeight: FontWeight.normal,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Lexend Deca',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.normal,
+                              ),
                         ),
                       ),
                       Align(

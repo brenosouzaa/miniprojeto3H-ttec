@@ -54,7 +54,7 @@ class _ConecteseansWidgetState extends State<ConecteseansWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
@@ -63,9 +63,14 @@ class _ConecteseansWidgetState extends State<ConecteseansWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'v9qslonz' /*  */,
+              'v9qslonz' /* Conecte-se a nós */,
             ),
-            style: FlutterFlowTheme.of(context).titleMedium,
+            style: FlutterFlowTheme.of(context).titleMedium.override(
+                  fontFamily: 'Poppins',
+                  color: Colors.white,
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w900,
+                ),
           ),
           actions: [],
           centerTitle: true,

@@ -57,7 +57,7 @@ class _ComentarWidgetState extends State<ComentarWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
@@ -66,12 +66,12 @@ class _ComentarWidgetState extends State<ComentarWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'leshcyxe' /* comentar */,
+              'leshcyxe' /* Comentar */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -247,7 +247,7 @@ class _ComentarWidgetState extends State<ComentarWidget> {
                         ),
                         direction: Axis.horizontal,
                         initialRating: _model.ratingBarValue ??= 3.0,
-                        unratedColor: FlutterFlowTheme.of(context).accent3,
+                        unratedColor: FlutterFlowTheme.of(context).lineColor,
                         itemCount: 5,
                         itemSize: 45.0,
                         glowColor: FlutterFlowTheme.of(context).tertiary,

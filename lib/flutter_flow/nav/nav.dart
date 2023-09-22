@@ -97,27 +97,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => CadastroWidget(),
             ),
             FFRoute(
-              name: 'HomePage',
-              path: 'homePage',
-              requireAuth: true,
-              builder: (context, params) => HomePageWidget(),
-            ),
-            FFRoute(
               name: 'login',
               path: 'login',
               builder: (context, params) => LoginWidget(),
-            ),
-            FFRoute(
-              name: 'configuracao',
-              path: 'configuracao',
-              requireAuth: true,
-              builder: (context, params) => ConfiguracaoWidget(),
             ),
             FFRoute(
               name: 'historico',
               path: 'historico',
               requireAuth: true,
               builder: (context, params) => HistoricoWidget(),
+            ),
+            FFRoute(
+              name: 'HomePage',
+              path: 'homePage',
+              requireAuth: true,
+              builder: (context, params) => HomePageWidget(),
+            ),
+            FFRoute(
+              name: 'configuracao',
+              path: 'configuracao',
+              requireAuth: true,
+              builder: (context, params) => ConfiguracaoWidget(),
             ),
             FFRoute(
               name: 'conta',
@@ -132,16 +132,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => FavoritoWidget(),
             ),
             FFRoute(
-              name: 'busca',
-              path: 'busca',
-              requireAuth: true,
-              builder: (context, params) => BuscaWidget(),
-            ),
-            FFRoute(
               name: 'fichattecnica',
               path: 'fichattecnica',
               requireAuth: true,
               builder: (context, params) => FichattecnicaWidget(),
+            ),
+            FFRoute(
+              name: 'busca',
+              path: 'busca',
+              requireAuth: true,
+              builder: (context, params) => BuscaWidget(),
             ),
             FFRoute(
               name: 'resultado',
@@ -201,16 +201,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => NotificacaoWidget(),
             ),
             FFRoute(
+              name: 'comentar',
+              path: 'comentar',
+              requireAuth: true,
+              builder: (context, params) => ComentarWidget(),
+            ),
+            FFRoute(
               name: 'avaliacaoempresa',
               path: 'avaliacaoempresa',
               requireAuth: true,
               builder: (context, params) => AvaliacaoempresaWidget(),
             ),
             FFRoute(
-              name: 'comentar',
-              path: 'comentar',
+              name: 'categoria',
+              path: 'categoria',
               requireAuth: true,
-              builder: (context, params) => ComentarWidget(),
+              builder: (context, params) => CategoriaWidget(),
+            ),
+            FFRoute(
+              name: 'categoriaCopy',
+              path: 'categoriaCopy',
+              requireAuth: true,
+              builder: (context, params) => CategoriaCopyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

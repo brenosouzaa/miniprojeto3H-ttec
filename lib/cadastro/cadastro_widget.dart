@@ -63,7 +63,7 @@ class _CadastroWidgetState extends State<CadastroWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_outlined,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Color(0xFFFBF3F3),
               size: 30.0,
             ),
             onPressed: () async {
@@ -76,8 +76,8 @@ class _CadastroWidgetState extends State<CadastroWidget> {
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Poppins',
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
-                  fontSize: 30.0,
+                  color: Color(0xFFFBF3F3),
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -474,101 +474,95 @@ class _CadastroWidgetState extends State<CadastroWidget> {
                                   .asValidator(context),
                             ),
                           ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Align(
-                                alignment: AlignmentDirectional(0.25, 0.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      24.0, 24.0, 24.0, 24.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      GoRouter.of(context).prepareAuthEvent();
-                                      if (_model.senhaController.text !=
-                                          _model.senha2Controller.text) {
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(
-                                          SnackBar(
-                                            content: Text(
-                                              'Passwords don\'t match!',
-                                            ),
-                                          ),
-                                        );
-                                        return;
-                                      }
-
-                                      final user = await authManager
-                                          .createAccountWithEmail(
-                                        context,
-                                        _model.emailController.text,
-                                        _model.senhaController.text,
-                                      );
-                                      if (user == null) {
-                                        return;
-                                      }
-
-                                      await currentUserReference!
-                                          .update(createUsersRecordData(
-                                        userName: _model.nomeController.text,
-                                        apelido: _model.apelidoController.text,
-                                      ));
-                                      await showDialog(
-                                        context: context,
-                                        builder: (alertDialogContext) {
-                                          return AlertDialog(
-                                            title: Text('sucesso'),
-                                            content: Text(
-                                                'sua conta foi criada com sucesso'),
-                                            actions: [
-                                              TextButton(
-                                                onPressed: () => Navigator.pop(
-                                                    alertDialogContext),
-                                                child: Text('Ok'),
-                                              ),
-                                            ],
-                                          );
-                                        },
-                                      );
-
-                                      context.goNamedAuth(
-                                          'HomePage', context.mounted);
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'xklritch' /* Cadastrar */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 200.0,
-                                      height: 50.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBtnText,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Color(0xFF551A8B),
-                                            fontSize: 20.0,
-                                            fontWeight: FontWeight.w900,
-                                          ),
-                                      elevation: 2.0,
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(8.0),
-                                    ),
-                                  ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Align(
+                    alignment: AlignmentDirectional(0.25, 0.00),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          30.0, 30.0, 30.0, 30.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          GoRouter.of(context).prepareAuthEvent();
+                          if (_model.senhaController.text !=
+                              _model.senha2Controller.text) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Passwords don\'t match!',
                                 ),
                               ),
-                            ],
+                            );
+                            return;
+                          }
+
+                          final user = await authManager.createAccountWithEmail(
+                            context,
+                            _model.emailController.text,
+                            _model.senhaController.text,
+                          );
+                          if (user == null) {
+                            return;
+                          }
+
+                          await currentUserReference!
+                              .update(createUsersRecordData(
+                            userName: _model.nomeController.text,
+                            apelido: _model.apelidoController.text,
+                          ));
+                          await showDialog(
+                            context: context,
+                            builder: (alertDialogContext) {
+                              return AlertDialog(
+                                title: Text('sucesso'),
+                                content:
+                                    Text('sua conta foi criada com sucesso'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () =>
+                                        Navigator.pop(alertDialogContext),
+                                    child: Text('Ok'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+
+                          context.goNamedAuth('HomePage', context.mounted);
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          'xklritch' /* Cadastrar */,
+                        ),
+                        options: FFButtonOptions(
+                          width: 200.0,
+                          height: 50.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: FlutterFlowTheme.of(context).primaryBtnText,
+                          textStyle:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Poppins',
+                                    color: Color(0xFF551A8B),
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.w900,
+                                  ),
+                          elevation: 2.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
                           ),
-                        ],
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
                       ),
                     ),
                   ),

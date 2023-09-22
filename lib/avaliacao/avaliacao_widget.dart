@@ -55,7 +55,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_outlined,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
@@ -68,8 +68,8 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Poppins',
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
-                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -215,7 +215,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                   10.0, 0.0, 0.0, 0.0),
                               child: Icon(
                                 Icons.help_outline,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),
@@ -250,7 +250,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                             },
                             child: Icon(
                               Icons.arrow_forward_ios,
-                              color: FlutterFlowTheme.of(context).black600,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
                           ),
@@ -290,7 +290,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                   10.0, 0.0, 0.0, 0.0),
                               child: Icon(
                                 Icons.comment,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),
@@ -325,7 +325,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                             },
                             child: Icon(
                               Icons.arrow_forward_ios,
-                              color: FlutterFlowTheme.of(context).black600,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
                           ),
@@ -365,7 +365,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                   10.0, 0.0, 0.0, 0.0),
                               child: Icon(
                                 Icons.try_sms_star,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),
@@ -400,7 +400,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                             },
                             child: Icon(
                               Icons.arrow_forward_ios,
-                              color: FlutterFlowTheme.of(context).black600,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
                           ),

@@ -58,7 +58,7 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_outlined,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Color(0xFFFBF3F3),
               size: 30.0,
             ),
             onPressed: () async {
@@ -67,11 +67,12 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'c1a7xpq5' /* Historico */,
+              'c1a7xpq5' /* Histórico */,
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Poppins',
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
+                  color: Color(0xFFFBF3F3),
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -250,7 +251,7 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
                         Expanded(
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                19.0, 0.0, 0.0, 0.0),
+                                19.0, 0.0, 0.0, 5.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 '6eiowdjv' /* Vistos anteriores */,
@@ -272,70 +273,79 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
-                        },
-                        text: FFLocalizations.of(context).getText(
-                          'e825ajan' /* Filtrar */,
-                        ),
-                        icon: Icon(
-                          Icons.format_list_bulleted,
-                          size: 15.0,
-                        ),
-                        options: FFButtonOptions(
-                          width: 160.0,
-                          height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF551A8B),
-                                    fontWeight: FontWeight.w900,
-                                  ),
-                          elevation: 2.0,
-                          borderSide: BorderSide(
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            width: 1.0,
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                        child: FFButtonWidget(
+                          onPressed: () {
+                            print('Button pressed ...');
+                          },
+                          text: FFLocalizations.of(context).getText(
+                            'e825ajan' /* Filtrar */,
                           ),
-                          borderRadius: BorderRadius.circular(8.0),
+                          icon: Icon(
+                            Icons.format_list_bulleted,
+                            size: 15.0,
+                          ),
+                          options: FFButtonOptions(
+                            width: 160.0,
+                            height: 40.0,
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            textStyle:
+                                FlutterFlowTheme.of(context).bodySmall.override(
+                                      fontFamily: 'Poppins',
+                                      color: Color(0xFF551A8B),
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                            elevation: 2.0,
+                            borderSide: BorderSide(
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
                         ),
                       ),
-                      FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
-                        },
-                        text: FFLocalizations.of(context).getText(
-                          'pfistsrq' /* Excluir */,
-                        ),
-                        icon: Icon(
-                          Icons.delete,
-                          size: 15.0,
-                        ),
-                        options: FFButtonOptions(
-                          width: 160.0,
-                          height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF551A8B),
-                                    fontWeight: FontWeight.w900,
-                                  ),
-                          elevation: 2.0,
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1.0,
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                        child: FFButtonWidget(
+                          onPressed: () {
+                            print('Button pressed ...');
+                          },
+                          text: FFLocalizations.of(context).getText(
+                            'pfistsrq' /* Excluir */,
                           ),
-                          borderRadius: BorderRadius.circular(8.0),
+                          icon: Icon(
+                            Icons.delete,
+                            size: 15.0,
+                          ),
+                          options: FFButtonOptions(
+                            width: 160.0,
+                            height: 40.0,
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            textStyle:
+                                FlutterFlowTheme.of(context).bodySmall.override(
+                                      fontFamily: 'Poppins',
+                                      color: Color(0xFF551A8B),
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                            elevation: 2.0,
+                            borderSide: BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
                         ),
                       ),
                     ],
@@ -368,8 +378,8 @@ class _HistoricoWidgetState extends State<HistoricoWidget> {
                                   width: 100.0,
                                   height: 100.0,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    color:
+                                        FlutterFlowTheme.of(context).secondary,
                                   ),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(

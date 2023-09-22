@@ -55,7 +55,7 @@ class _NotificacaoWidgetState extends State<NotificacaoWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: FlutterFlowTheme.of(context).primaryText,
               size: 30.0,
             ),
             onPressed: () async {
@@ -91,7 +91,7 @@ class _NotificacaoWidgetState extends State<NotificacaoWidget> {
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Poppins',
-                        fontSize: 14.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w900,
                       ),
                 ),
@@ -130,7 +130,12 @@ class _NotificacaoWidgetState extends State<NotificacaoWidget> {
                               FFLocalizations.of(context).getText(
                                 'ncuxej0i' /* Habilitar Notificações */,
                               ),
-                              style: FlutterFlowTheme.of(context).labelMedium,
+                              style: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w800,
+                                  ),
                             ),
                           ),
                           Switch(
@@ -187,7 +192,12 @@ class _NotificacaoWidgetState extends State<NotificacaoWidget> {
                               FFLocalizations.of(context).getText(
                                 'v9ynrqzy' /* Receber Alertas de Comentários */,
                               ),
-                              style: FlutterFlowTheme.of(context).labelMedium,
+                              style: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w800,
+                                  ),
                             ),
                           ),
                           Switch(
@@ -244,7 +254,12 @@ class _NotificacaoWidgetState extends State<NotificacaoWidget> {
                               FFLocalizations.of(context).getText(
                                 '3mhgkwuw' /* Receber Alertas de Curtidas */,
                               ),
-                              style: FlutterFlowTheme.of(context).labelMedium,
+                              style: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w800,
+                                  ),
                             ),
                           ),
                           Switch(
@@ -301,7 +316,12 @@ class _NotificacaoWidgetState extends State<NotificacaoWidget> {
                               FFLocalizations.of(context).getText(
                                 'r1z128y3' /* Receber Alertas do Aplicativo */,
                               ),
-                              style: FlutterFlowTheme.of(context).labelMedium,
+                              style: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w800,
+                                  ),
                             ),
                           ),
                           Switch(

@@ -86,7 +86,7 @@ class _FichattecnicaWidgetState extends State<FichattecnicaWidget> {
                 buttonSize: 60.0,
                 icon: Icon(
                   Icons.arrow_back_rounded,
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
+                  color: Color(0xFFFBF3F3),
                   size: 30.0,
                 ),
                 onPressed: () async {
@@ -95,12 +95,12 @@ class _FichattecnicaWidgetState extends State<FichattecnicaWidget> {
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'x1md5wno' /* Ficha Tecnica  */,
+                  'x1md5wno' /* Ficha Técnica  */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Poppins',
                       color: Colors.white,
-                      fontSize: 22.0,
+                      fontSize: 25.0,
                       fontWeight: FontWeight.w900,
                     ),
               ),

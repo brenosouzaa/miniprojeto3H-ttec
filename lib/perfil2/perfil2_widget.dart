@@ -65,7 +65,7 @@ class _Perfil2WidgetState extends State<Perfil2Widget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
@@ -79,7 +79,7 @@ class _Perfil2WidgetState extends State<Perfil2Widget> {
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -104,8 +104,6 @@ class _Perfil2WidgetState extends State<Perfil2Widget> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
                             shape: BoxShape.circle,
                           ),
                           child: Padding(
@@ -134,7 +132,7 @@ class _Perfil2WidgetState extends State<Perfil2Widget> {
                                         ),
                                       );
                                     },
-                                  ).then((value) => setState(() {}));
+                                  ).then((value) => safeSetState(() {}));
 
                                   await currentUserReference!
                                       .update(createUsersRecordData(
@@ -237,6 +235,11 @@ class _Perfil2WidgetState extends State<Perfil2Widget> {
                 child: AuthUserStreamWidget(
                   builder: (context) => TextFormField(
                     controller: _model.textController1,
+                    onFieldSubmitted: (_) async {
+                      await currentUserReference!.update(createUsersRecordData(
+                        userName: '',
+                      ));
+                    },
                     readOnly: true,
                     obscureText: false,
                     decoration: InputDecoration(

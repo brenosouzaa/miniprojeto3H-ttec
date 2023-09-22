@@ -144,185 +144,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // HomePage
-  {
-    '5vxf8d4q': {
-      'en': 'tech zoom',
-      'es': '',
-    },
-    'avzu4nml': {
-      'en': 'Minha Conta',
-      'es': '',
-    },
-    'k2ec3jp3': {
-      'en': 'Categoria',
-      'es': '',
-    },
-    'amxbainq': {
-      'en': 'Pesquisa',
-      'es': '',
-    },
-    '21u1prih': {
-      'en': 'PlayStation',
-      'es': '',
-    },
-    '250z8yzy': {
-      'en': 'Xbox',
-      'es': '',
-    },
-    'mq0chn5i': {
-      'en': 'Nintendo',
-      'es': '',
-    },
-    '8y0uigl8': {
-      'en': 'Console',
-      'es': '',
-    },
-    '4oydp6co': {
-      'en': 'Relogio',
-      'es': '',
-    },
-    'v6jysof1': {
-      'en': 'Relogio 02',
-      'es': '',
-    },
-    'rt84itn7': {
-      'en': 'Relogio 03',
-      'es': '',
-    },
-    'qf34qb3w': {
-      'en': 'Relogio',
-      'es': '',
-    },
-    's9zinxw3': {
-      'en': 'computador',
-      'es': '',
-    },
-    'gtph7r96': {
-      'en': 'Computador01',
-      'es': '',
-    },
-    'rg2xpjzd': {
-      'en': 'Computado02',
-      'es': '',
-    },
-    'o33ducd4': {
-      'en': 'Pc',
-      'es': '',
-    },
-    'lba2q6v7': {
-      'en': 'Option 1',
-      'es': '',
-    },
-    'l73ui8eb': {
-      'en': 'cam01',
-      'es': '',
-    },
-    'csdhx4mz': {
-      'en': 'cam02',
-      'es': '',
-    },
-    'u2zvchiy': {
-      'en': 'Camera',
-      'es': '',
-    },
-    '1aafjglf': {
-      'en': 'Option 1',
-      'es': '',
-    },
-    'g0bara0q': {
-      'en': 'Celular',
-      'es': '',
-    },
-    'cylis2xq': {
-      'en': 'Celular',
-      'es': '',
-    },
-    'oomep6og': {
-      'en': 'Celular',
-      'es': '',
-    },
-    'viq4n6y2': {
-      'en': 'Option 1',
-      'es': '',
-    },
-    'x2a79482': {
-      'en': 'Televisao',
-      'es': '',
-    },
-    'fw6tqi5l': {
-      'en': 'Televisao',
-      'es': '',
-    },
-    'gmct3c11': {
-      'en': 'Tv',
-      'es': '',
-    },
-    'oyl1zm30': {
-      'en': 'Option 1',
-      'es': '',
-    },
-    'wztck8lm': {
-      'en': 'Fones01',
-      'es': '',
-    },
-    'xo5268h0': {
-      'en': 'Fones02',
-      'es': '',
-    },
-    '99jqx0sx': {
-      'en': 'Fones',
-      'es': '',
-    },
-    'dl4wmpet': {
-      'en': 'Option 1',
-      'es': '',
-    },
-    'dfl5inui': {
-      'en': 'Eletrodomestico',
-      'es': '',
-    },
-    'jk3j6toq': {
-      'en': 'Eletrodomestico',
-      'es': '',
-    },
-    '74d6xg89': {
-      'en': 'Domestico',
-      'es': '',
-    },
-    'y1six6fm': {
-      'en': 'Rede social',
-      'es': '',
-    },
-    'i5rcvhpo': {
-      'en': 'Label here...',
-      'es': '',
-    },
-    'qm92me8v': {
-      'en': 'Categoria',
-      'es': '',
-    },
-    'z62llhpv': {
-      'en': 'Ajuda',
-      'es': '',
-    },
-    '9090gz5n': {
-      'en': 'Pesquisa',
-      'es': '',
-    },
-    'ife553ei': {
-      'en': 'Lançamentos',
-      'es': '',
-    },
-    'ztn3iqrd': {
-      'en': 'Lançamentos',
-      'es': '',
-    },
-    'vn2s1aye': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // login
   {
     'gh5ylvzd': {
@@ -362,53 +183,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // configuracao
-  {
-    '3r2lkr66': {
-      'en': 'Configurações',
-      'es': '',
-    },
-    'edmiqr6c': {
-      'en': 'Minha conta',
-      'es': '',
-    },
-    '4plav6ws': {
-      'en': 'Conta',
-      'es': '',
-    },
-    'jlbmt5mv': {
-      'en': 'Historico',
-      'es': '',
-    },
-    'isvvpcdv': {
-      'en': 'Favorito',
-      'es': '',
-    },
-    'ygceut6w': {
-      'en': 'Notificação',
-      'es': '',
-    },
-    'ntr1vzr0': {
-      'en': 'Suporte',
-      'es': '',
-    },
-    'dc49clv7': {
-      'en': 'Central de Ajuda',
-      'es': '',
-    },
-    '11hy7rmp': {
-      'en': 'Avaliação e Feedback',
-      'es': '',
-    },
-    '1eqpocpb': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // historico
   {
     'c1a7xpq5': {
-      'en': 'Historico',
+      'en': 'Histórico',
       'es': '',
     },
     'h5rg8ed7': {
@@ -440,6 +218,84 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'u113nmxz': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // HomePage
+  {
+    '5vxf8d4q': {
+      'en': 'TechZoom',
+      'es': '',
+    },
+    'z62llhpv': {
+      'en': 'Ajuda',
+      'es': '',
+    },
+    '9090gz5n': {
+      'en': 'Pesquisa',
+      'es': '',
+    },
+    'ife553ei': {
+      'en': 'Lançamentos',
+      'es': '',
+    },
+    'ztn3iqrd': {
+      'en': 'Lançamentos',
+      'es': '',
+    },
+    'vn2s1aye': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // configuracao
+  {
+    '3r2lkr66': {
+      'en': 'Configurações',
+      'es': '',
+    },
+    'edmiqr6c': {
+      'en': 'Minha conta',
+      'es': '',
+    },
+    '4plav6ws': {
+      'en': 'Conta',
+      'es': '',
+    },
+    'jlbmt5mv': {
+      'en': 'Historico',
+      'es': '',
+    },
+    'isvvpcdv': {
+      'en': 'Favorito',
+      'es': '',
+    },
+    'ygceut6w': {
+      'en': 'Notificação',
+      'es': '',
+    },
+    'qri3zotv': {
+      'en': 'Modo Claro',
+      'es': '',
+    },
+    'kygbs1et': {
+      'en': 'Modo Escuro',
+      'es': '',
+    },
+    'ntr1vzr0': {
+      'en': 'Suporte',
+      'es': '',
+    },
+    'dc49clv7': {
+      'en': 'Central de Ajuda',
+      'es': '',
+    },
+    '11hy7rmp': {
+      'en': 'Avaliação e Feedback',
+      'es': '',
+    },
+    '1eqpocpb': {
       'en': 'Home',
       'es': '',
     },
@@ -510,10 +366,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
+  // fichattecnica
+  {
+    'x1md5wno': {
+      'en': 'Ficha Técnica ',
+      'es': '',
+    },
+    '4rg3zudd': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
   // busca
   {
     'xt3y0u8n': {
-      'en': 'busca',
+      'en': 'Busca',
       'es': '',
     },
     'xpf0ud6s': {
@@ -521,7 +388,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'dwzxmxl9': {
-      'en': '20 resultados encontrado',
+      'en': '20 resultados encontrados',
       'es': '',
     },
     'ttmgt07e': {
@@ -545,92 +412,81 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // fichattecnica
-  {
-    'x1md5wno': {
-      'en': 'Ficha Tecnica ',
-      'es': '',
-    },
-    '4rg3zudd': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // resultado
   {
     '1csnndnh': {
-      'en': 'Page Title',
+      'en': 'Resultado',
       'es': '',
     },
-    '3h873k4e': {
+    'jef4o55b': {
       'en': 'Mais',
       'es': '',
     },
-    'hrq61lwl': {
+    'x2vsl3zj': {
       'en': 'Ficha Tecnica',
       'es': '',
     },
-    'zstqrpgf': {
+    '9v77yms3': {
       'en': 'Nosso FeedBack',
       'es': '',
     },
-    'bng48ak7': {
+    'ustay7we': {
       'en': 'Avaliações',
       'es': '',
     },
-    '23da72gy': {
+    'lbod9xp8': {
       'en': '4.3%',
       'es': '',
     },
-    'do53vlwm': {
+    '11qxr3j8': {
       'en': '50 pessoas deram nota pra  esse produto',
       'es': '',
     },
-    '0nkw1g8o': {
+    'k3odkpkl': {
       'en': '70%',
       'es': '',
     },
-    '9va959eh': {
+    'yyne5hax': {
       'en': '20%',
       'es': '',
     },
-    '0lyqufdi': {
+    'fijpv8i2': {
       'en': '10%',
       'es': '',
     },
-    'r9uscl1t': {
+    'qvukl2b4': {
       'en': '0%',
       'es': '',
     },
-    'n2qi0sco': {
+    'apaogspq': {
       'en': '0%',
       'es': '',
     },
-    '9rdizj5a': {
+    'if2ww7ln': {
       'en': 'Avaliar',
       'es': '',
     },
-    'si121b4y': {
+    'dayj7hpo': {
       'en': 'Comentarios 32',
       'es': '',
     },
-    'q0nsukwd': {
+    'oicwincg': {
       'en': 'Filtrar',
       'es': '',
     },
-    'r1yvsje2': {
+    'sulv01tn': {
       'en': 'comentar',
       'es': '',
     },
-    'ogzm5ej7': {
+    '98bhrqp3': {
       'en': '10h',
       'es': '',
     },
-    '5fml752f': {
+    'i5yxiis4': {
       'en': '190 Curtida',
       'es': '',
     },
-    'g1laf4la': {
+    'uz896wkn': {
       'en': '- 299 Comentarios',
       'es': '',
     },
@@ -642,7 +498,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // feedback
   {
     'xz3wzdgt': {
-      'en': 'feedback',
+      'en': 'Feedback',
       'es': '',
     },
     'efqmwk3a': {
@@ -744,7 +600,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'adaxc2bx': {
-      'en': 'suporte',
+      'en': 'Suporte',
       'es': '',
     },
   },
@@ -853,7 +709,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'v9qslonz': {
-      'en': '',
+      'en': 'Conecte-se a nós',
       'es': '',
     },
   },
@@ -884,21 +740,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // avaliacaoempresa
-  {
-    '3e1khfx8': {
-      'en': 'Por favor, avalie a empresa abaixo.',
-      'es': '',
-    },
-    'umvk590f': {
-      'en': 'Enviar Avaliação',
-      'es': '',
-    },
-    'aqm3c17p': {
-      'en': 'Avalie a Empresa',
-      'es': '',
-    },
-  },
   // comentar
   {
     'g5bls6f7': {
@@ -918,11 +759,96 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'leshcyxe': {
-      'en': 'comentar',
+      'en': 'Comentar',
       'es': '',
     },
     '094h89k2': {
       'en': 'Home',
+      'es': '',
+    },
+  },
+  // avaliacaoempresa
+  {
+    '3e1khfx8': {
+      'en': 'Por favor, avalie a empresa abaixo.',
+      'es': '',
+    },
+    'umvk590f': {
+      'en': 'Enviar Avaliação',
+      'es': '',
+    },
+    'aqm3c17p': {
+      'en': 'Avalie a Empresa',
+      'es': '',
+    },
+  },
+  // categoria
+  {
+    'lc9z4tt0': {
+      'en': 'Categoria',
+      'es': '',
+    },
+    '9zv2nluw': {
+      'en': 'Pesquisar produtos...',
+      'es': '',
+    },
+    '8nvxtpxo': {
+      'en': 'Smartphone',
+      'es': '',
+    },
+    'f18bs10q': {
+      'en': 'Computador',
+      'es': '',
+    },
+    'vpswrqzc': {
+      'en': 'TV',
+      'es': '',
+    },
+    'qrxq3cma': {
+      'en': 'Tablet',
+      'es': '',
+    },
+    'dse90l3n': {
+      'en': 'Fone',
+      'es': '',
+    },
+    'vsq1zjm9': {
+      'en': 'smartwatch',
+      'es': '',
+    },
+    'xsh9ddzr': {
+      'en': 'Monitor',
+      'es': '',
+    },
+    'f8okkjqe': {
+      'en': 'Teclado',
+      'es': '',
+    },
+    '2knjmtoi': {
+      'en': 'Notebook',
+      'es': '',
+    },
+    '8wcg5lcf': {
+      'en': 'Mouse',
+      'es': '',
+    },
+  },
+  // categoriaCopy
+  {
+    'm41cs7yc': {
+      'en': 'Categoria',
+      'es': '',
+    },
+    'fws4h6fm': {
+      'en': 'Pesquisar produtos...',
+      'es': '',
+    },
+    'qxjh0kdu': {
+      'en': 'Categorias',
+      'es': '',
+    },
+    'pfekvkwh': {
+      'en': 'Smartphone',
       'es': '',
     },
   },
@@ -1026,6 +952,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nvo6y0w8': {
       'en': 'Confirmar',
+      'es': '',
+    },
+  },
+  // DarkLightSwitchLarge
+  {
+    'uyz0o4wb': {
+      'en': 'Light Mode',
+      'es': '',
+    },
+    'dsxo1wc4': {
+      'en': 'Dark Mode',
       'es': '',
     },
   },

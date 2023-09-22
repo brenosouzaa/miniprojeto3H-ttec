@@ -57,7 +57,7 @@ class _Feedback1WidgetState extends State<Feedback1Widget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
@@ -71,7 +71,7 @@ class _Feedback1WidgetState extends State<Feedback1Widget> {
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),

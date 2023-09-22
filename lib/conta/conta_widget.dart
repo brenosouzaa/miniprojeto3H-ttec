@@ -45,7 +45,7 @@ class _ContaWidgetState extends State<ContaWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
+          backgroundColor: Color(0xFF551A8B),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -54,7 +54,7 @@ class _ContaWidgetState extends State<ContaWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Color(0xFFFBF3F3),
               size: 30.0,
             ),
             onPressed: () async {
@@ -68,7 +68,7 @@ class _ContaWidgetState extends State<ContaWidget> {
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -130,7 +130,8 @@ class _ContaWidgetState extends State<ContaWidget> {
                                 },
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  color: FlutterFlowTheme.of(context).black600,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
                               ),
@@ -185,7 +186,8 @@ class _ContaWidgetState extends State<ContaWidget> {
                                     0.0, 0.0, 20.0, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  color: FlutterFlowTheme.of(context).black600,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
                               ),
@@ -232,7 +234,7 @@ class _ContaWidgetState extends State<ContaWidget> {
                                   0.0, 0.0, 20.0, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),
@@ -278,7 +280,7 @@ class _ContaWidgetState extends State<ContaWidget> {
                                   0.0, 0.0, 20.0, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),
@@ -324,7 +326,7 @@ class _ContaWidgetState extends State<ContaWidget> {
                                   0.0, 0.0, 20.0, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),
@@ -370,7 +372,7 @@ class _ContaWidgetState extends State<ContaWidget> {
                                   0.0, 0.0, 20.0, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
-                                color: FlutterFlowTheme.of(context).black600,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 size: 24.0,
                               ),
                             ),

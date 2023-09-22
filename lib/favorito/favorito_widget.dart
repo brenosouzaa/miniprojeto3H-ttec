@@ -88,7 +88,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                 buttonSize: 60.0,
                 icon: Icon(
                   Icons.arrow_back_rounded,
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
+                  color: Colors.white,
                   size: 30.0,
                 ),
                 onPressed: () async {
@@ -103,7 +103,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Poppins',
                       color: Colors.white,
-                      fontSize: 24.0,
+                      fontSize: 25.0,
                       fontWeight: FontWeight.w900,
                     ),
               ),
@@ -205,7 +205,13 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                           '8f42ww3b' /* pesquisar */,
                                         ),
                                         hintStyle: FlutterFlowTheme.of(context)
-                                            .bodySmall,
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                            ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: Color(0x00000000),
@@ -248,7 +254,7 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                         ),
                                         filled: true,
                                         fillColor: FlutterFlowTheme.of(context)
-                                            .primaryBtnText,
+                                            .secondaryBackground,
                                         prefixIcon: Icon(
                                           Icons.search,
                                         ),
@@ -272,6 +278,8 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Poppins',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
                                             fontWeight: FontWeight.w800,
                                           ),
                                       validator: _model.textControllerValidator
@@ -339,7 +347,8 @@ class _FavoritoWidgetState extends State<FavoritoWidget> {
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Poppins',
-                                          color: Color(0xFF551A8B),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontWeight: FontWeight.w900,
                                         ),
                                     elevation: 2.0,

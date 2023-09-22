@@ -55,7 +55,7 @@ class _SuporteWidgetState extends State<SuporteWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_outlined,
-              color: FlutterFlowTheme.of(context).primaryBtnText,
+              color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
@@ -64,12 +64,12 @@ class _SuporteWidgetState extends State<SuporteWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'adaxc2bx' /* suporte */,
+              'adaxc2bx' /* Suporte */,
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Poppins',
-                  color: FlutterFlowTheme.of(context).primaryBtnText,
-                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.w900,
                 ),
           ),
@@ -104,7 +104,7 @@ class _SuporteWidgetState extends State<SuporteWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 15.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
                     'klev9iag' /* Como podemos ajudar? */,
