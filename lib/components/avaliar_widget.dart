@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -71,16 +72,18 @@ class _AvaliarWidgetState extends State<AvaliarWidget> {
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                width: 60.0,
-                height: 60.0,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                ),
-                child: Image.network(
-                  'https://picsum.photos/seed/413/600',
-                  fit: BoxFit.cover,
+              AuthUserStreamWidget(
+                builder: (context) => Container(
+                  width: 60.0,
+                  height: 60.0,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Image.network(
+                    currentUserPhoto,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Padding(
@@ -97,17 +100,18 @@ class _AvaliarWidgetState extends State<AvaliarWidget> {
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'zppwrabf' /* apelido */,
+                            child: AuthUserStreamWidget(
+                              builder: (context) => Text(
+                                valueOrDefault(
+                                    currentUserDocument?.apelido, ''),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 16.0,
+                                      fontWeight: FontWeight.w800,
+                                    ),
                               ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    fontSize: 16.0,
-                                    fontWeight: FontWeight.w800,
-                                  ),
                             ),
                           ),
                         ],
@@ -116,15 +120,16 @@ class _AvaliarWidgetState extends State<AvaliarWidget> {
                     Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Text(
-                          FFLocalizations.of(context).getText(
-                            '7b6fdbmh' /* nome */,
+                        AuthUserStreamWidget(
+                          builder: (context) => Text(
+                            valueOrDefault(currentUserDocument?.userName, ''),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.bold,
+                                ),
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.bold,
-                                  ),
                         ),
                       ],
                     ),
@@ -169,7 +174,7 @@ class _AvaliarWidgetState extends State<AvaliarWidget> {
                   ),
                   direction: Axis.horizontal,
                   initialRating: _model.ratingBarValue ??= 3.0,
-                  unratedColor: FlutterFlowTheme.of(context).lineColor,
+                  unratedColor: FlutterFlowTheme.of(context).secondaryText,
                   itemCount: 5,
                   itemPadding: EdgeInsets.fromLTRB(1.0, 1.0, 1.0, 1.0),
                   itemSize: 50.0,
@@ -185,8 +190,8 @@ class _AvaliarWidgetState extends State<AvaliarWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
               child: FFButtonWidget(
-                onPressed: () {
-                  print('Button pressed ...');
+                onPressed: () async {
+                  context.safePop();
                 },
                 text: FFLocalizations.of(context).getText(
                   '4ayixtf3' /* Cancelar */,

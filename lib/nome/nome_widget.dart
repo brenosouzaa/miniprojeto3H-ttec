@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'nome_model.dart';
@@ -30,13 +29,6 @@ class _NomeWidgetState extends State<NomeWidget> {
     super.initState();
     _model = createModel(context, () => NomeModel());
 
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      await currentUserReference!.update(createUsersRecordData(
-        userName: valueOrDefault(currentUserDocument?.userName, ''),
-      ));
-    });
-
     _model.textController ??= TextEditingController();
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -53,7 +45,9 @@ class _NomeWidgetState extends State<NomeWidget> {
     context.watch<FFAppState>();
 
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
+      onTap: () => _model.unfocusNode.canRequestFocus
+          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
+          : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -223,13 +217,12 @@ class _NomeWidgetState extends State<NomeWidget> {
                     children: [
                       FFButtonWidget(
                         onPressed: () async {
+                          context.pushNamed('configuracao');
+
                           await currentUserReference!
                               .update(createUsersRecordData(
-                            userName: valueOrDefault(
-                                currentUserDocument?.userName, ''),
+                            userName: _model.textController.text,
                           ));
-
-                          context.pushNamed('configuracao');
                         },
                         text: FFLocalizations.of(context).getText(
                           'k6c444bi' /* Salvar */,

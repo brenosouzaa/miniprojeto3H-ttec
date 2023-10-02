@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 
 import '../../auth/base_auth_user_provider.dart';
@@ -97,15 +98,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => CadastroWidget(),
             ),
             FFRoute(
-              name: 'login',
-              path: 'login',
-              builder: (context, params) => LoginWidget(),
-            ),
-            FFRoute(
               name: 'historico',
               path: 'historico',
               requireAuth: true,
               builder: (context, params) => HistoricoWidget(),
+            ),
+            FFRoute(
+              name: 'login',
+              path: 'login',
+              builder: (context, params) => LoginWidget(),
             ),
             FFRoute(
               name: 'HomePage',
@@ -153,28 +154,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'feedback',
-              path: 'feedback',
-              requireAuth: true,
-              builder: (context, params) => FeedbackWidget(),
-            ),
-            FFRoute(
               name: 'nome',
               path: 'nome',
               requireAuth: true,
               builder: (context, params) => NomeWidget(),
             ),
             FFRoute(
-              name: 'suporte',
-              path: 'suporte',
-              requireAuth: true,
-              builder: (context, params) => SuporteWidget(),
-            ),
-            FFRoute(
               name: 'perfil2',
               path: 'perfil2',
               requireAuth: true,
               builder: (context, params) => Perfil2Widget(),
+            ),
+            FFRoute(
+              name: 'suporte',
+              path: 'suporte',
+              requireAuth: true,
+              builder: (context, params) => SuporteWidget(),
             ),
             FFRoute(
               name: 'feedback1',
@@ -223,6 +218,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'categoriaCopy',
               requireAuth: true,
               builder: (context, params) => CategoriaCopyWidget(),
+            ),
+            FFRoute(
+              name: 'coementarios',
+              path: 'coementarios',
+              requireAuth: true,
+              builder: (context, params) => CoementariosWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -479,4 +480,24 @@ class _RouteErrorBuilderState extends State<_RouteErrorBuilder> {
 
   @override
   Widget build(BuildContext context) => widget.child;
+}
+
+class RootPageContext {
+  const RootPageContext(this.isRootPage, [this.errorRoute]);
+  final bool isRootPage;
+  final String? errorRoute;
+
+  static bool isInactiveRootPage(BuildContext context) {
+    final rootPageContext = context.read<RootPageContext?>();
+    final isRootPage = rootPageContext?.isRootPage ?? false;
+    final location = GoRouter.of(context).location;
+    return isRootPage &&
+        location != '/' &&
+        location != rootPageContext?.errorRoute;
+  }
+
+  static Widget wrap(Widget child, {String? errorRoute}) => Provider.value(
+        value: RootPageContext(true, errorRoute),
+        child: child,
+      );
 }

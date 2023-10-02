@@ -1,10 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'mudarnome_widget.dart' show MudarnomeWidget;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class MudarnomeModel extends FlutterFlowModel {
+class MudarnomeModel extends FlutterFlowModel<MudarnomeWidget> {
   /// Initialization and disposal methods.
 
   void initState(BuildContext context) {}

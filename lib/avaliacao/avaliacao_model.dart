@@ -3,11 +3,12 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'avaliacao_widget.dart' show AvaliacaoWidget;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class AvaliacaoModel extends FlutterFlowModel {
+class AvaliacaoModel extends FlutterFlowModel<AvaliacaoWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

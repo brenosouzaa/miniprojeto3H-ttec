@@ -144,45 +144,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // login
-  {
-    'gh5ylvzd': {
-      'en': 'Login',
-      'es': '',
-    },
-    '74pic22d': {
-      'en': 'TECH ZOOM',
-      'es': '',
-    },
-    'kkgnqdcg': {
-      'en': 'Email:',
-      'es': '',
-    },
-    'cwm8kwlu': {
-      'en': 'Senha:',
-      'es': '',
-    },
-    '7k6ilrrp': {
-      'en': 'Esqueceu a senha?',
-      'es': '',
-    },
-    'k20059yd': {
-      'en': 'Entrar',
-      'es': '',
-    },
-    'o04yvtdl': {
-      'en': 'Cadastrar',
-      'es': '',
-    },
-    '7mq92bgt': {
-      'en': 'usar rede social',
-      'es': '',
-    },
-    'k8n9lc09': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // historico
   {
     'c1a7xpq5': {
@@ -222,6 +183,45 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
+  // login
+  {
+    'gh5ylvzd': {
+      'en': 'Login',
+      'es': '',
+    },
+    '74pic22d': {
+      'en': 'TECH ZOOM',
+      'es': '',
+    },
+    'kkgnqdcg': {
+      'en': 'Email:',
+      'es': '',
+    },
+    'cwm8kwlu': {
+      'en': 'Senha:',
+      'es': '',
+    },
+    '7k6ilrrp': {
+      'en': 'Esqueceu a senha?',
+      'es': '',
+    },
+    'k20059yd': {
+      'en': 'Entrar',
+      'es': '',
+    },
+    'o04yvtdl': {
+      'en': 'Cadastrar',
+      'es': '',
+    },
+    '7mq92bgt': {
+      'en': 'usar rede social',
+      'es': '',
+    },
+    'k8n9lc09': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
   // HomePage
   {
     '5vxf8d4q': {
@@ -232,16 +232,36 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Ajuda',
       'es': '',
     },
-    '9090gz5n': {
+    's6gy0b54': {
       'en': 'Pesquisa',
       'es': '',
     },
-    'ife553ei': {
+    'dqy3w7mr': {
       'en': 'Lançamentos',
       'es': '',
     },
-    'ztn3iqrd': {
+    '5ekbyo5a': {
       'en': 'Lançamentos',
+      'es': '',
+    },
+    '3zosv0q4': {
+      'en': 'Acessorios para o seu computador',
+      'es': '',
+    },
+    '9ju46bxe': {
+      'en': 'Mouse',
+      'es': '',
+    },
+    'ghovaprz': {
+      'en': 'Teclado',
+      'es': '',
+    },
+    'vbiuku8u': {
+      'en': 'Monitor',
+      'es': '',
+    },
+    '6c6pvlyz': {
+      'en': 'Headset',
       'es': '',
     },
     'vn2s1aye': {
@@ -426,10 +446,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Ficha Tecnica',
       'es': '',
     },
-    '9v77yms3': {
-      'en': 'Nosso FeedBack',
-      'es': '',
-    },
     'ustay7we': {
       'en': 'Avaliações',
       'es': '',
@@ -495,17 +511,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
-  // feedback
-  {
-    'xz3wzdgt': {
-      'en': 'Feedback',
-      'es': '',
-    },
-    'efqmwk3a': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // nome
   {
     'kjnvlg12': {
@@ -526,6 +531,33 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nub6qaxx': {
       'en': 'Home',
+      'es': '',
+    },
+  },
+  // perfil2
+  {
+    'ivdwznvd': {
+      'en': 'Perfil',
+      'es': '',
+    },
+    'tvbvb3ff': {
+      'en': 'Nome:',
+      'es': '',
+    },
+    's7qq23pa': {
+      'en': 'Apelido:',
+      'es': '',
+    },
+    '7oky8qt2': {
+      'en': 'Email',
+      'es': '',
+    },
+    '44s4macx': {
+      'en': 'Mais',
+      'es': '',
+    },
+    '26j24elk': {
+      'en': 'Sair da Conta',
       'es': '',
     },
   },
@@ -601,33 +633,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'adaxc2bx': {
       'en': 'Suporte',
-      'es': '',
-    },
-  },
-  // perfil2
-  {
-    'ivdwznvd': {
-      'en': 'Perfil',
-      'es': '',
-    },
-    'tvbvb3ff': {
-      'en': 'Nome:',
-      'es': '',
-    },
-    's7qq23pa': {
-      'en': 'Apelido:',
-      'es': '',
-    },
-    '7oky8qt2': {
-      'en': 'Email',
-      'es': '',
-    },
-    '44s4macx': {
-      'en': 'Mais',
-      'es': '',
-    },
-    '26j24elk': {
-      'en': 'Sair da Conta',
       'es': '',
     },
   },
@@ -852,6 +857,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
   },
+  // coementarios
+  {
+    '8o9fvh55': {
+      'en': 'Respostas',
+      'es': '',
+    },
+    'e04fxe4w': {
+      'en': '10h',
+      'es': '',
+    },
+    'lmr2av1g': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    'cv6vdzn3': {
+      'en': '190 Curtida',
+      'es': '',
+    },
+    'ia6oc6cn': {
+      'en': '- 299 Comentarios',
+      'es': '',
+    },
+    'qhh8mimz': {
+      'en': '10h',
+      'es': '',
+    },
+    'wgm2hxxf': {
+      'en': 'Comentar',
+      'es': '',
+    },
+    '2itzrtkm': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
   // excluir
   {
     'ccnv05gt': {
@@ -904,14 +944,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // avaliar
   {
-    'zppwrabf': {
-      'en': 'apelido',
-      'es': '',
-    },
-    '7b6fdbmh': {
-      'en': 'nome',
-      'es': '',
-    },
     'i28axm0j': {
       'en': 'Avaliar:',
       'es': '',
